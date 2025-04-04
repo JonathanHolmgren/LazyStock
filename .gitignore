@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Finder (MacOS) folder config
+.DS_Store
+
 # User-specific files
 *.rsuser
 *.suo
@@ -398,3 +401,72 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+
+# Client-specific files (add your Client-specific ignores here)
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+Client/node_modules/
+Client/dist/
+Client/dist-ssr/
+Client/*.local/
+Client/.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Finder (MacOS) folder config
+.DS_Store
+
+
+# Server-specific files (add your server-specific ignores here)
+Server/node_modules/
+Server/.env
+
+# output
+out
+dist
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+Server/.env
+Server/.env.development.local
+Server/.env.test.local
+Server/.env.production.local
+Server/.env.local
+
+# caches
+Server/.eslintcache
+Server/.cache
+Server/*.tsbuildinfo
+
+# IntelliJ based IDEs
+Server/.idea
+
+# Finder (MacOS) folder config
+.DS_Store
